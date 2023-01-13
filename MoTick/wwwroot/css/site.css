@@ -16,3 +16,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.movies-cards-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+.card-flex-container {
+    display: flex;
+}
+
+@media (max-width: 400px) {
+    .card-flex-container {
+        flex-direction: column;
+    }
+}
